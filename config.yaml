@@ -1,5 +1,5 @@
-directory: /home/raul/nasmedia/Music/raul_music 
-library: /home/raul/nasmedia/Music/raul_music.db
+directory: /Volumes/media/Music/raul_music 
+library: /Volumes/media/Music/raul_music.db
 import:
   copy: yes
   quiet_fallback: asis
@@ -7,7 +7,7 @@ paths:
   default: $albumartist/$album%aunique{}/$title
   singleton: Non-Album/$artist/$title
   comp: Compilations/$album$aunique{}/$title
-plugins: fetchart
+plugins: fetchart embedart convert
 ui:
   color: no
 fetchart:
@@ -20,9 +20,10 @@ fetchart:
   quality: 0 # default
   max_filesize: 0 # disabled
   enforce_ratio: 10px
-  sources: coverart itunes amazon albumart 
+  sources: spotify itunes coverart amazon albumart 
   deinterlace: yes
   cover_format: JPEG 
-
-
-
+embedart:
+  auto: yes
+  compare_threshold: 0
+  ifempty: no
