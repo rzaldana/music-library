@@ -1,0 +1,12 @@
+beets==2.3.1
+confuse==2.0.1
+filetype==1.2.0
+jellyfish==1.2.0
+lap==0.5.12
+mediafile==0.13.0
+musicbrainzngs==0.7.1
+mutagen==1.47.0
+numpy==2.3.0
+platformdirs==4.3.8
+PyYAML==6.0.2
+Unidecode==1.4.0
