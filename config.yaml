@@ -1,0 +1,28 @@
+directory: /home/raul/nasmedia/Music/raul_music 
+library: /home/raul/nasmedia/Music/raul_music.db
+import:
+  copy: yes
+  quiet_fallback: asis
+paths:
+  default: $albumartist/$album%aunique{}/$title
+  singleton: Non-Album/$artist/$title
+  comp: Compilations/$album$aunique{}/$title
+plugins: fetchart
+ui:
+  color: no
+fetchart:
+  # docs: https://beets.readthedocs.io/en/stable/plugins/fetchart.html
+  auto: yes
+  #cautious: yes
+  #cover_names: []
+  minwidth: 500
+  maxwidth: 500
+  quality: 0 # default
+  max_filesize: 0 # disabled
+  enforce_ratio: 10px
+  sources: coverart itunes amazon albumart 
+  deinterlace: yes
+  cover_format: JPEG 
+
+
+
